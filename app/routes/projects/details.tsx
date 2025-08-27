@@ -4,7 +4,11 @@ import { FaArrowLeft } from "react-icons/fa";
 import { Link } from "react-router";
 
 export async function clientLoader ({request,params}:Route.ClientLoaderArgs):Promise<Project>{
-    const res = await fetch(`http://localhost:3000/projects/${params.id}`);
+    const res = await fetch(`https://upgraded-space-succotash-gx46j6wvvw63wjgp-3000.app.github.dev/${params.id}`);
+
+    //Στο codespace κανω fetch  το url που θα μου βγαλει οταν τρεξω τον json server και πατησω open to browser
+    //Τοπικα κανω fetch απο αυτο http://localhost:3000/projects/${params.id}
+    
     if(!res.ok) throw new Response("Project not found",{status:404});
     const project:Project = await res.json();
     return project;
