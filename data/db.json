@@ -69,6 +69,16 @@
     "date": "2024-09-01",
     "category": "Fullstack",
     "featured": false
+  },
+  {
+    "id": 8,
+    "title": "Iphone 16",
+    "description": "A minimalist blogging platform with Markdown and comments.",
+    "image": "/images/iphone.jpg",
+    "url": "https://example.com",
+    "date": "2024-09-01",
+    "category": "Mobile",
+    "featured": false
   }
 ]
 }
